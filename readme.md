@@ -18,9 +18,11 @@ Each graphical model is characterized by a graph that can be either:
 * Consist of undirected graphs
 * They are parameterized by factors - Factors represent how much 2 or more variables agree with each other.
 
-#### Bayesian Models / Networks
+### Bayesian Models / Networks
 Mostly used when we want to represent a casual relationship btn the random variables.
 > cardinality: the number of possible values a feature can assume
+
+Joint Distribution over all the variables is just the product of all the CPDs in the network.
 
 
 
