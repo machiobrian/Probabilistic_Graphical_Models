@@ -68,4 +68,9 @@ Defined by an (M x M) matrix
 6. Emission Prob Matrix 
 ~~~~
 
+`The Learning Problem`
+* The objective : estimate for a & b using the training data.
+* Std algo to do this is [BaumWelch]: it uses [Expectation_Maximization] Algo.
+
+
 
