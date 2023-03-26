@@ -1,3 +1,5 @@
+# Probability.
+
 `Probabilistic Graphical Models`
 
 PGM : is a techinique for compactly representing Joint Probabistic Distribution over random variables.
@@ -72,5 +74,35 @@ Defined by an (M x M) matrix
 * The objective : estimate for a & b using the training data.
 * Std algo to do this is [BaumWelch]: it uses [Expectation_Maximization] Algo.
 
+# Machine Learning Based Unbalnced Detection of a Rotating Shaft using Vibration Data.
+## Hidden markov Model
+* Our notebook will be run on a SLURM cluster for `fast hyperparameter search`
+* Recordings used for training are selected using the `n_good`, `n_bad` variables.
+* HMM/MFCC variables are speed sensitive. We therefore choose a suitable speed range using `rpm_lb/ub` (**b - bound**)
+
+~~~~
+We are only making use of a single vibration signal : that is Vibration_1.
+Space for improvement, where we make use of all the three/ alteast two vibration signals
+~~~~
+
+* The signal data is `reshaped`. 
+    * One  sample of `1-second length/row` and permuted randomly
 
 
+#### Data Loading Observations.
+
+#### Speed 
+`Should be investigated further on its effect on the perfomrance of the HMM`
+~~~~
+715 < rpm < 815
+Vibration_1/2/3 : 0D - 325 values
+                  3D - 331 values
+
+715 < rpm < 915
+Vibration_1/2/3 : 0D - 709 values
+                  3D - 708 values                  
+~~~~
+
+## Parts to Improve on:
+1. Speed (rpm) adjustment - data loading observations 
+2. Use of multi vibration signal instead of the datasets single signal
