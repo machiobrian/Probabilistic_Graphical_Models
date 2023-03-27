@@ -77,7 +77,7 @@ Defined by an (M x M) matrix
 # Machine Learning Based Unbalnced Detection of a Rotating Shaft using Vibration Data.
 ## Hidden markov Model
 * Our notebook will be run on a SLURM cluster for `fast hyperparameter search`
-* Recordings used for training are selected using the `n_good`, `n_bad` variables.
+* Recordings used for training are selected using the `wo_unb`, `unb` variables. `good & bad respectively`
 * HMM/MFCC variables are speed sensitive. We therefore choose a suitable speed range using `rpm_lb/ub` (**b - bound**)
 
 ~~~~
@@ -106,3 +106,8 @@ Vibration_1/2/3 : 0D - 709 values
 ## Parts to Improve on:
 1. Speed (rpm) adjustment - data loading observations 
 2. Use of multi vibration signal instead of the datasets single signal
+3. Hyperparameter tuning.
+
+## Find out:
+1. tmp, tmp1, tmp2 ??
+2. Every other output/variable from the function train
